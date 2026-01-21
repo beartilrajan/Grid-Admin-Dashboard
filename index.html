@@ -6,11 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
-        <div class="header"></div>
+        <div class="header">
+            <div class="headtop">
+                <div class="search-icon">🔍</div>
+                <input type="text" class="search" placeholder="Search..." />
+                <div class="profile">
+                    <span class="bell">🔔</span>
+                    <div class="photo"></div>
+                    <span>Beartil Rajan</span>
+                </div>
+            </div>
+            <div class="headbottom">
+                <div class="photo"></div>
+                <div class="intro">
+                    <div class="hi">Hi there,</div>
+                    <div class="name">Beartil Rajan(@beartil)</div>
+                </div>
+                <div class="nav">
+                    <button class="new" id="nav">new</button>
+                    <button class="class" id="nav">Class</button>
+                    <button class="upload" id="nav">Upload</button>
+                </div>
+            </div>
+        </div>
         <div class="sidebar"></div>
         <div class="content"></div>
     </div>
