@@ -5,16 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header,
-.sidebar,
-.content {
-    border: 1px solid black;
-}
-
 .container {
     display: grid;
     grid-template-columns: 0.7fr 3fr;
-    grid-template-rows: 0.7fr 3fr;
+    grid-template-rows: 140px 1fr;
     min-height: 100vh;
 }
 
@@ -73,8 +67,13 @@ body {
 .photo {
     width: 40px;
     height: 40px;
-    border: 1px solid;
+    background-color: rgb(253, 97, 49);
     border-radius: 50%;
+}
+
+#newPhoto {
+    width: 52px;
+    height: 52px;
 }
 
 .headbottom {
@@ -83,6 +82,17 @@ body {
     gap: 1.2rem;
     align-items: center;
     padding-inline-start: 2rem;
+    justify-content: center;
+}
+
+.hi {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .nav {
@@ -95,7 +105,7 @@ body {
     padding: 0.4rem;
     border-radius: 999px;
     border: none;
-    background-color: #1992d4;
+    background-color: #d45e19;
     color: white;
     font-size: 1rem;
     font-weight: 700;
@@ -104,7 +114,7 @@ body {
 .sidebar {
     display: grid;
     grid-template-rows: 6rem 1.6fr 2fr;
-    background-color: #1992d4;
+    background-color: #d45e19;
 }
 
 li {
@@ -144,4 +154,57 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/* Card Area */
+
+.content>* {
+    border: 1px solid red;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.column1 {
+    background-color: #e2e8f0;
+    padding: 16px;
+}
+
+.cardContainer {
+    display: grid;
+    padding-inline: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    width: clamp(50px, 50vw, 350px);
+    height: 150px;
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.textProject {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.subtext {
+    font-size: 1rem;
 }
